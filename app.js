@@ -104,6 +104,12 @@ shang: `BD Wong`,
 theEmperor: `Pat Morita`});
 //=====================
 //5e. Using the NEW keyword, create a new object by passing in the same values from question 4d. However, pass in the following object for the value of the "cast" property {rapunzel: `Mandy Moore`, flynnRider: `Zachary Levi`, motherGothel: `Donna Murphy`} and set the entire new created object to a const variable called rapunzel3
-const rapunzel3 = new DMCast(`Tangled`, `Rapunzel`, {rapunzel: `Mandy Moore`, flynnRider: `Zachary Levi`, motherGothel: `Donna Murphy`});
+const rapunzel3 = new DMCast(
+    `Tangled`, 
+    `Rapunzel`, 
+    {
+rapunzel: `Mandy Moore`, 
+flynnRider: `Zachary Levi`, 
+motherGothel: `Donna Murphy`});
 //=====================
 //BONUS
