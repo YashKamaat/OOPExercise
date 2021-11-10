@@ -95,6 +95,13 @@ constructor(t, m, c) {
 super(t, m, c);
     this.cast = c;
     }
+
+ // BONUS
+  // 6a
+  static create(t, m, c){
+    return new DMCast(t, m, c);
+    
+  }
 }
 //=====================
 //5d. Using the NEW keyword, create a new object by passing in the same values from question 4c. However, pass in the following object for the value of the "cast" property {mulan: `Ming-Na Wen`, mushu: `Eddie Murphy`, shang: `BD Wong`, theEmperor: `Pat Morita`} and set the entire new created object to a const variable called mulan3
@@ -113,3 +120,30 @@ flynnRider: `Zachary Levi`,
 motherGothel: `Donna Murphy`});
 //=====================
 //BONUS
+
+// 6b
+const moana = DMCast.create(
+    `Moana`,
+    `Moana of Motunui`,
+    {
+      moana: `Auli'i Cravalho`,
+      maui: `Dwayne Johnson`,
+      grammaTala: `Rachel House`,
+      chiefTui: `Temuera Morrison`
+    }
+  );
+  //==================
+  // 6c
+  console.log(moana);
+  /*
+  DMCast {
+    title: 'Moana',
+    main: 'Moana of Motunui',
+    cast: {
+      moana: "Auli'i Cravalho",
+      maui: 'Dwayne Johnson',
+      grammaTala: 'Rachel House',
+      chiefTui: 'Temuera Morrison'
+    }
+  }
+  */
