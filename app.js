@@ -89,21 +89,13 @@ class DMCast extends DM {
 //=====================
 
 //5b. Inside the DMCast subclass create a constructor that takes the following parameters ("title", "main", & "cast").
-constructor(title, main, cast) {
+constructor(t, m, c) {
 //=====================
 //5c. Inside the constructor use the SUPER keyword to get the "title" & "main" properties from the DM parent class. Also, set the cast parameter as a new property (HINT: You will need to use the THIS keyword)
-super(title, main, cast);
-    this.cast = cast;
+super(t, m, c);
+    this.cast = c;
     }
-
-    static create(title, main, cast) {
-        return `{
-            title: ${title},
-            main: ${main},
-            cast: ${cast}
-        }`
-    }
-    }
+}
 //=====================
 //5d. Using the NEW keyword, create a new object by passing in the same values from question 4c. However, pass in the following object for the value of the "cast" property {mulan: `Ming-Na Wen`, mushu: `Eddie Murphy`, shang: `BD Wong`, theEmperor: `Pat Morita`} and set the entire new created object to a const variable called mulan3
 const mulan3 = new DMCast(`Mulan`, `Fa Mulan`, {mulan: `Ming-Na Wen`, mushu: `Eddie Murphy`, shang: `BD Wong`, theEmperor: `Pat Morita`});
@@ -112,5 +104,3 @@ const mulan3 = new DMCast(`Mulan`, `Fa Mulan`, {mulan: `Ming-Na Wen`, mushu: `Ed
 const rapunzel3 = new DMCast(`Tangled`, `Rapunzel`, {rapunzel: `Mandy Moore`, flynnRider: `Zachary Levi`, motherGothel: `Donna Murphy`});
 //=====================
 //BONUS
-//6a
-// 6b
